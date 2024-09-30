@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="stream, tv, browser, extension" />
+    <meta name="author" content="Plurg" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="icon" type="image/png" href="./assets/icons/plurg.png" />
+    <title>Plurg TV</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container flex">
+        <div class="navbar_icon">
+          <h1><a href="index.html">Plurg</a></h1>
+          <img src="./assets/icons/plurg.png" alt="icon" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#explore" class="link">Explore</a></li>
+            <li><a href="policy.html" class="link">Policy</a></li>
+            <li><a href="#contacts" class="link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="home">
+      <p class="home_para container">
+        Join other users and enjoy live tv streams including; sports,
+        technology, entertainment, movies, news etc. Install extension now
+      </p>
+
+      <div class="download container">
+        <a
+          href="https://chrome.google.com/webstore/detail/plurg/okkckmldiolpfjignfpblddgmfbncpfl"
+          target="_blank"
+          >Download Extension</a
+        >
+      </div>
+    </section>
+
+    <section id="explore" class="explore container">
+      <h1>Join the Trending Live Stream TV</h1>
+      <div class="showcase">
+        <div class="items">
+          <img src="./assets/images/snap1.png" alt="showcase1" />
+          <img src="./assets/images/snap2.png" alt="showcase2" />
+          <img src="./assets/images/snap3.png" alt="showcase3" />
+          <img src="./assets/images/snap4.png" alt="showcase4" />
+        </div>
+      </div>
+    </section>
+
+    <section id="guide" class="guide container">
+      <h1 class="header">Guide</h1>
+      <ol>
+        <li>
+          <div>
+            <h3>Overview</h3>
+            <p>
+              Install extension now, connect with other users and share opinions
+              in the live chat.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Get in touch</h3>
+            <p>
+              For more info, suggestions, reports and inquiries. send us a mail
+              @: <b>plurginc@gmail.com</b>
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <div id="popup_mail" class="overlay">
+      <div class="popup">
+        <h2>Contact Us</h2>
+        <a class="close" href="#contact">&times;</a>
+        <div class="details">
+          <p class="pop_msg">
+            Send us a mail for advert, suggestions, reports and for more
+            inquiries. mail: <b>plurginc@gmail.com</b>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup_msg" class="overlay">
+      <div class="popup">
+        <h2>Alert</h2>
+        <a class="close" href="#explore">&times;</a>
+        <div class="details">
+          <p class="pop_alert"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="contacts">
+      <ul class="footer_links">
+        <li>
+          <a
+            href="https://twitter.com/plurg_me"
+            target="_blank"
+            class="reach twitter"
+            ><img src="./assets/icons/x.webp" class="twitter_img"
+          /></a>
+        </li>
+        <li>
+          <a href="#popup_mail" class="reach mail"
+            ><img src="./assets/icons/gmail.png"
+          /></a>
+        </li>
+      </ul>
+      <h3 class="copyright">
+        Plurg Inc &#169; 2024 copyright all rights reserved
+      </h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
