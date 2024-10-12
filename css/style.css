@@ -347,9 +347,30 @@ img {
   margin-top: 20px;
 }
 
+.showcase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase .top {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .showcase h3 {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.showcase video,
+.showcase .top img {
+  width: 48%;
 }
 
 .showcase .items {
