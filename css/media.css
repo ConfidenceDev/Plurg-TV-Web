@@ -41,6 +41,15 @@
     margin-top: 16px;
   }
 
+  .showcase .top {
+    flex-direction: column;
+  }
+
+  .showcase video,
+  .showcase .top img {
+    width: 100%;
+  }
+
   .showcase .items img {
     width: 100%;
   }
