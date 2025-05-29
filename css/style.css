@@ -376,13 +376,15 @@ img {
 .showcase .items {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
 }
 
 .showcase .items img {
-  width: 450px;
-  height: 420px;
+  width: 95%;
+  height: auto;
   box-shadow: 0 1px 4px var(--dark-grey);
   border-radius: 4px;
   padding: 2px;
