@@ -453,8 +453,12 @@ img {
   height: auto;
 }
 
-.footer .footer_links .twitter_img {
+.footer .footer_links .tw_img {
   width: 70px;
+}
+
+.footer .footer_links .kc_img {
+  width: 57px;
 }
 
 .footer .footer_links img:hover {
