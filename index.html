@@ -1,156 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="stream, tv, browser, extension" />
     <meta name="author" content="Plurg" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/modal.css" />
-    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="icon" type="image/png" href="./assets/icons/plurg.png" />
     <title>Plurg TV</title>
   </head>
   <body>
-    <div class="navbar">
-      <div class="container flex">
-        <div class="navbar_icon">
-          <h1><a href="index.html">Plurg</a></h1>
-          <img src="./assets/icons/plurg.png" alt="icon" />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#explore" class="link">Explore</a></li>
-            <li><a href="policy.html" class="link">Policy</a></li>
-            <li><a href="#contacts" class="link">Contact</a></li>
-          </ul>
-        </nav>
+    <header>
+      <div class="logo_header">
+        <h1><a href="index.html" class="logo">Plurg TV</a></h1>
+        <!-- <img src="./assets/icons/plurg.png" alt="logo" /> -->
       </div>
-    </div>
-
-    <section id="home" class="home">
-      <p class="home_para container">
-        Join other users and enjoy live tv streams including; sports,
-        technology, entertainment, movies, news etc. Install extension now
-        <!-- <br />
-        <br />
-        NOTE: You might get a little delay in loading content for a few seconds
-        (about 50 sec) on extension first launch due to the fact that the server
-        needs to kickstart since it is currently running in free mode. -->
-      </p>
-
-      <div class="download container">
-        <a
-          href="https://chromewebstore.google.com/detail/plurg/okkckmldiolpfjignfpblddgmfbncpfl"
-          class="download_btn"
-          target="_blank"
-          >Download Extension</a
-        >
-      </div>
-    </section>
-
-    <section id="explore" class="explore container">
-      <h1>Join the Trending Live Stream TV</h1>
-      <div class="showcase">
-        <div class="top">
-          <video src="./assets/video/demo.mp4" controls></video>
-          <img src="./assets/images/s1.jpg" alt="showcase0" />
-        </div>
-        <div class="items">
-          <img src="./assets/images/s2.jpg" alt="showcase1" />
-          <img src="./assets/images/s3.jpg" alt="showcase2" />
-          <img src="./assets/images/s4.jpg" alt="showcase3" />
+      <ul class="nav">
+        <li><a href="#">Guide</a></li>
+        <li><a href="#">Policy</a></li>
+      </ul>
+    </header>
+    <div class="banner">
+      <div class="content bg-65 active">
+        <img src="./assets/the-65-title.png" alt="" class="movie-title" />
+        <h4>
+          <span>2023</span><span><i>Live</i></span
+          ><span>Action</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+          neque dolores distinctio libero quo, temporibus totam sit eum magnam,
+          expedita facilis impedit sunt deserunt placeat maxime iusto sint
+          voluptatem labore in iste molestias alias ut autem. Quod
+          necessitatibus esse repellat aspernatur odit vero commodi aliquid,
+          quibusdam temporibus vitae ullam nobis!
+        </p>
+        <div class="button">
+          <a href="#" onclick="toggleVideo();"
+            ><i class="fa-solid fa-plus"></i> Demo</a
+          >
         </div>
       </div>
-    </section>
-
-    <section id="guide" class="guide container">
-      <h1 class="header">Guide</h1>
-      <ol>
-        <li>
-          <div>
-            <h3>Overview</h3>
-            <p>
-              Install extension now, connect with other users and share opinions
-              in the live chat.
-            </p>
+      <div class="content the-little-mermaid">
+        <img
+          src="./assets/the-little-mermaid-title.png"
+          alt=""
+          class="movie-title"
+        />
+        <h4>
+          <span>2024</span><span><i>Live</i></span
+          ><span>Drama</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+          neque dolores distinctio libero quo, temporibus totam sit eum magnam,
+          expedita facilis impedit sunt deserunt placeat maxime iusto sint
+          voluptatem labore in iste molestias alias ut autem. Quod
+          necessitatibus esse repellat aspernatur odit vero commodi aliquid,
+          quibusdam temporibus vitae ullam nobis!
+        </p>
+        <div class="button">
+          <a href="#" onclick="toggleVideo();"
+            ><i class="fa-solid fa-plus"></i> Demo</a
+          >
+        </div>
+      </div>
+      <div class="content the-covenant">
+        <img src="./assets/the-covenant-title.png" alt="" class="movie-title" />
+        <h4>
+          <span>2023</span><span><i>Live</i></span
+          ><span>Action</span>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+          neque dolores distinctio libero quo, temporibus totam sit eum magnam,
+          expedita facilis impedit sunt deserunt placeat maxime iusto sint
+          voluptatem labore in iste molestias alias ut autem. Quod
+          necessitatibus esse repellat aspernatur odit vero commodi aliquid,
+          quibusdam temporibus vitae ullam nobis!
+        </p>
+        <div class="button">
+          <a href="#" onclick="toggleVideo();"
+            ><i class="fa-solid fa-plus"></i> My List</a
+          >
+        </div>
+      </div>
+      <div class="carousel-box">
+        <div class="carousel">
+          <div class="carousel-item" onclick="changeBg('bg-65.jpeg', 'bg-65');">
+            <img src="./assets/movies/65.jpg" alt="" />
           </div>
-        </li>
-        <li>
-          <div>
-            <h3>Usage</h3>
-            <p>
-              - Click on a category to start TV <br />
-              - Use the &#x276E; and &#x276F; button to change available
-              channels <br />
-              - You would need to sign in to use join the chat. <br />
-              - Keep chat civil and on point.
-            </p>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');"
+          >
+            <img src="./assets/movies/the-little-mermaid.jpeg" alt="" />
           </div>
-        </li>
-        <li>
-          <div>
-            <h3>Get in touch</h3>
-            <p>
-              For more info, suggestions, reports and inquiries. send us a mail
-              @: <b>plurginc@gmail.com</b>
-            </p>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-the-covenant.jpeg', 'the-covenant');"
+          >
+            <img src="./assets/movies/the-covenant.jpg" alt="" />
           </div>
-        </li>
-      </ol>
-    </section>
-
-    <div id="popup_mail" class="overlay">
-      <div class="popup">
-        <h2>Contact Us</h2>
-        <a class="close" href="#contact">&times;</a>
-        <div class="details">
-          <p class="pop_msg">
-            Send us a mail for advert, suggestions, reports and for more
-            inquiries. mail: <b>plurginc@gmail.com</b>
-          </p>
         </div>
       </div>
-    </div>
-
-    <div id="popup_msg" class="overlay">
-      <div class="popup">
-        <h2>Alert</h2>
-        <a class="close" href="#home">&times;</a>
-        <div class="details">
-          <p class="pop_alert">
-            Download button would be enabled when extension is live in the
-            chrome webstore, in about 1 to 3 days from now.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer" id="contacts">
-      <ul class="footer_links">
+      <a
+        href="https://chromewebstore.google.com/detail/plurg/okkckmldiolpfjignfpblddgmfbncpfl"
+        class="download"
+        target="_blank"
+      >
+        <i class="fa-solid fa-download"></i> Download Extention
+      </a>
+      <ul class="sci">
         <li>
-          <a
-            href="https://kingschat.online/user/plurgtv"
-            target="_blank"
-            class="reach kingschat"
-            ><img src="./assets/icons/kingschat.png" class="kc_img"
-          /></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </li>
         <li>
-          <a href="https://x.com/plurgtv" target="_blank" class="reach twitter"
-            ><img src="./assets/icons/x.webp" class="tw_img"
-          /></a>
-        </li>
-        <li>
-          <a href="#popup_mail" class="reach mail"
-            ><img src="./assets/icons/gmail.png"
-          /></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
         </li>
       </ul>
       <h3 class="copyright">
         Plurg Inc &#169; 2025 copyright all rights reserved
       </h3>
-    </footer>
+    </div>
+    <div class="trailer">
+      <video src="./assets/video/demo.mp4" muted controls autoplay></video>
+      <img
+        class="close"
+        src="./assets/close.png"
+        alt=""
+        onclick="toggleVideo();"
+      />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
