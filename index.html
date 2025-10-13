@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <meta name="keywords" content="stream, tv, browser, extension" />
     <meta name="author" content="Plurg" />
     <link
@@ -28,91 +31,75 @@
         <!-- <img src="./assets/icons/plurg.png" alt="logo" /> -->
       </div>
       <ul class="nav">
-        <li><a href="#">Guide</a></li>
-        <li><a href="#">Policy</a></li>
+        <li><a href="#" onclick="toggleDialog();">Guide</a></li>
+        <li><a href="policy.html" onclick="toggleDialog();">Policy</a></li>
       </ul>
     </header>
     <div class="banner">
-      <div class="content bg-65 active">
-        <img src="./assets/the-65-title.png" alt="" class="movie-title" />
-        <h4>
-          <span>2023</span><span><i>Live</i></span
-          ><span>Action</span>
-        </h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
-          neque dolores distinctio libero quo, temporibus totam sit eum magnam,
-          expedita facilis impedit sunt deserunt placeat maxime iusto sint
-          voluptatem labore in iste molestias alias ut autem. Quod
-          necessitatibus esse repellat aspernatur odit vero commodi aliquid,
-          quibusdam temporibus vitae ullam nobis!
-        </p>
-        <div class="button">
-          <a href="#" onclick="toggleVideo();"
-            ><i class="fa-solid fa-plus"></i> Demo</a
-          >
-        </div>
-      </div>
-      <div class="content the-little-mermaid">
-        <img
-          src="./assets/the-little-mermaid-title.png"
-          alt=""
-          class="movie-title"
-        />
-        <h4>
-          <span>2024</span><span><i>Live</i></span
-          ><span>Drama</span>
-        </h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
-          neque dolores distinctio libero quo, temporibus totam sit eum magnam,
-          expedita facilis impedit sunt deserunt placeat maxime iusto sint
-          voluptatem labore in iste molestias alias ut autem. Quod
-          necessitatibus esse repellat aspernatur odit vero commodi aliquid,
-          quibusdam temporibus vitae ullam nobis!
-        </p>
-        <div class="button">
-          <a href="#" onclick="toggleVideo();"
-            ><i class="fa-solid fa-plus"></i> Demo</a
-          >
-        </div>
-      </div>
-      <div class="content the-covenant">
-        <img src="./assets/the-covenant-title.png" alt="" class="movie-title" />
-        <h4>
-          <span>2023</span><span><i>Live</i></span
-          ><span>Action</span>
-        </h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
-          neque dolores distinctio libero quo, temporibus totam sit eum magnam,
-          expedita facilis impedit sunt deserunt placeat maxime iusto sint
-          voluptatem labore in iste molestias alias ut autem. Quod
-          necessitatibus esse repellat aspernatur odit vero commodi aliquid,
-          quibusdam temporibus vitae ullam nobis!
-        </p>
-        <div class="button">
-          <a href="#" onclick="toggleVideo();"
-            ><i class="fa-solid fa-plus"></i> My List</a
-          >
-        </div>
-      </div>
       <div class="carousel-box">
         <div class="carousel">
-          <div class="carousel-item" onclick="changeBg('bg-65.jpeg', 'bg-65');">
-            <img src="./assets/movies/65.jpg" alt="" />
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-all.jpg', 'bg-all');"
+          >
+            <img src="./assets/images/carousel/all.jpg" alt="" />
+          </div>
+          <div class="carousel-item" onclick="changeBg('bg-news.jpg', 'news');">
+            <img src="./assets/images/carousel/news.jpg" alt="" />
           </div>
           <div
             class="carousel-item"
-            onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');"
+            onclick="changeBg('bg-entertainment.jpg', 'entertainment');"
           >
-            <img src="./assets/movies/the-little-mermaid.jpeg" alt="" />
+            <img src="./assets//images/carousel/entertainment.jpg" alt="" />
           </div>
           <div
             class="carousel-item"
-            onclick="changeBg('bg-the-covenant.jpeg', 'the-covenant');"
+            onclick="changeBg('bg-movies.jpeg', 'movies');"
           >
-            <img src="./assets/movies/the-covenant.jpg" alt="" />
+            <img src="./assets//images/carousel/movies.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-sports.jpg', 'sports');"
+          >
+            <img src="./assets//images/carousel/sports.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-entertainment.jpg', 'entertainment');"
+          >
+            <img src="./assets//images/carousel/entertainment.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-science.jpg', 'science');"
+          >
+            <img src="./assets//images/carousel/science.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-business.jpg', 'business');"
+          >
+            <img src="./assets//images/carousel/business.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-lifestyle.jpg', 'lifestyle');"
+          >
+            <img src="./assets//images/carousel/lifestyle.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-nature.jpg', 'nature');"
+          >
+            <img src="./assets//images/carousel/nature.jpg" alt="" />
+          </div>
+          <div
+            class="carousel-item"
+            onclick="changeBg('bg-animation.jpg', 'animation');"
+          >
+            <img src="./assets//images/carousel/animation.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -123,7 +110,7 @@
       >
         <i class="fa-solid fa-download"></i> Download Extention
       </a>
-      <ul class="sci">
+      <ul class="socials">
         <li>
           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
         </li>
@@ -135,13 +122,56 @@
         Plurg Inc &#169; 2025 copyright all rights reserved
       </h3>
     </div>
-    <div class="trailer">
+    <div class="demo">
       <video src="./assets/video/demo.mp4" muted controls autoplay></video>
       <img
         class="close"
-        src="./assets/close.png"
+        src="./assets/icons/close.png"
         alt=""
         onclick="toggleVideo();"
+      />
+    </div>
+    <div class="guide">
+      <div class="guide-container">
+        <h1 class="header">Guide</h1>
+        <ol>
+          <li>
+            <div>
+              <h3>Overview</h3>
+              <p>
+                Install extension now, connect with other users and share
+                opinions in the live chat.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Usage</h3>
+              <p>
+                - Click on a category to start TV <br />
+                - Use the &#x276E; and &#x276F; button to change available
+                channels <br />
+                - You would need to sign in to use join the chat. <br />
+                - Keep chat civil and on point.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Get in touch</h3>
+              <p>
+                For more info, suggestions, reports and inquiries. send us a
+                mail @: <b>plurginc@gmail.com</b>
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <img
+        class="close"
+        src="./assets/icons/close.png"
+        alt=""
+        onclick="toggleDialog();"
       />
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
