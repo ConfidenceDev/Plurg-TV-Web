@@ -90,7 +90,7 @@ categories.forEach((category, index) => {
       <p>${category.description}</p>
       <div class="button">
         <a href="#" onclick="toggleVideo();">
-          <i class="fa-solid fa-plus"></i> See Demo
+          <i class="bi bi-plus"></i> See Demo
         </a>
       </div>
     `;
@@ -110,33 +110,11 @@ function toggleDialog() {
   guide.classList.toggle("active");
 }
 
-/*function changeBg(bg, title) {
-  const banner = document.querySelector(".banner");
-  const contents = document.querySelectorAll(".content");
-  banner.style.background = `url("../assets/images/bg/${bg}")`;
-  banner.style.backgroundSize = "cover";
-  banner.style.backgroundPosition = "center";
-
-  contents.forEach((content) => {
-    content.classList.remove("active");
-    if (content.classList.contains(title)) {
-      content.classList.add("active");
-    }
-  });
-}*/
-
 function changeBg(bg, title) {
   const banner = document.querySelector(".banner");
   const contents = document.querySelectorAll(".content");
   const newBgUrl = `url("../assets/images/bg/${bg}")`;
-
-  const img = new Image();
-  img.src = newBgUrl;
-  img.onload = () => {
-    banner.style.backgroundImage = `url("${newBgUrl}")`;
-    banner.style.backgroundSize = "cover";
-    banner.style.backgroundPosition = "center";
-  };
+  banner.style.backgroundImage = newBgUrl;
 
   contents.forEach((content) => {
     content.classList.remove("active");
